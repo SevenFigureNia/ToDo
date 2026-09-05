@@ -1,0 +1,99 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Poppins', sans-serif; 
+} 
+
+.container { 
+  width: 100%; 
+  min-height: 100vh; 
+  /* FIX 1: Linear gradients must be declared as a 'background' or 'background-image', not 'background-color' */
+  background: #9b59b6; 
+  margin: auto; 
+  padding: 10px; 
+} 
+
+.Todo { 
+  width: 100%; 
+  max-width: 540px; 
+  background-color: #fff; 
+  margin: 100px auto 20px; 
+  padding: 30px 40px 70px; 
+  border-radius: 10px; 
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1); 
+} 
+
+.Todo h1 { 
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 20px; 
+  font-size: 30px; 
+  font-weight: 600; 
+  text-align: center; 
+  color: #333; 
+} 
+
+.Row { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: plum; 
+  padding-left: 20px; 
+  margin-bottom: 25px; 
+  border-radius: 30px; 
+} 
+
+.text { 
+  flex: 1; 
+  border: none; 
+  outline: none; 
+  background: transparent; 
+  padding: 10px; 
+} 
+
+#addTaskButton { 
+  border: none; 
+  outline: none; 
+  padding: 15px 50px; 
+  background-color: #9b59b6; 
+  color: #fff; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 40px; 
+} 
+
+ul li { 
+  list-style: none; 
+  font-size: 18px; 
+  padding: 12px 8px 12px 50px; 
+  user-select: none; 
+  cursor: pointer; 
+  position: relative; 
+} 
+
+ul li::before { 
+  content: ""; 
+  position: absolute; 
+  height: 28px; 
+  width: 28px; 
+  border-radius: 50%; 
+  /* Visual Anchor: Giving the circle a default border so it's visible before being checked */
+  border: 2px solid #ccc;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+} 
+
+/* FIX 2: Changed from 'ul li .checked' to 'ul li.checked' (no space) 
+   This ensures the styling applies directly when the JavaScript toggles the class ON the li element itself */
+ul li.checked { 
+  color: #999; 
+  text-decoration: line-through; 
+}
+
+/* Optional: Updates the custom radio circle color when checked */
+ul li.checked::before {
+  border-color: #71b7e6;
+  background-color: #71b7e6;
+}
