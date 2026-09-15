@@ -1,22 +1,52 @@
-# ✅ Week05 Bootcamp2019 Project: Todo List
+📝 To-Do List
 
-### Goal: Build a Simple Todo List
+A simple and interactive To-Do List application built with HTML, CSS, and JavaScript. This project allows users to organize tasks, track what needs to be completed, and manage their daily responsibilities.
 
-### How to submit your code for review:
+🚀 Features
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+Add new tasks
+Mark tasks as completed
+Delete tasks
+View current tasks
+Interactive user interface
+Responsive design
+🛠️ Built With
+HTML
+CSS
+JavaScript
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+🎯 How to Use
+
+Enter a task into the input field.
+Click the Add button.
+Select a task when it is completed.
+Delete tasks when they are no longer needed.
+
+
+📚 What I Practiced
+This project helped me practice:
+
+JavaScript functions
+DOM manipulation
+Event listeners
+Arrays
+Objects
+Conditional statements
+User input
+Creating and updating HTML elements
+Basic application logic
+
+
+💡 Future Improvements
+Add task editing
+Add due dates
+Add task categories
+Add priority levels
+Save tasks using local storage
+Add dark mode
+Add filtering for completed and active tasks
+
+
+👩🏽‍💻 Author
+Built as part of my journey into software engineering and JavaScript development.
